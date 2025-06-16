@@ -1,0 +1,186 @@
+
+/* Product card hover effects */
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Image styling */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Rating stars consistency */
+.fa-star, .fa-star-half-alt {
+  font-size: 14px;
+}
+
+/* Custom button hover effects */
+.btn-outline-primary:hover {
+  transform: scale(1.05);
+}
+
+/* Price slider styling */
+.form-range::-webkit-slider-thumb {
+  background: #0d6efd;
+}
+
+.form-range::-moz-range-thumb {
+  background: #0d6efd;
+}
+
+/* Footer links hover effect */
+footer a:hover {
+  color: #0d6efd !important;
+}
+
+/* Newsletter input focus */
+footer .form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+  
+.section-filter{
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+.custom-btn {
+    text-transform: capitalize;
+    background-color: lightpink !important ;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 0;
+}
+
+.custom-btn:hover {
+    background-color: lightpink !important;
+    font-size: 18px;
+    color: white !important;
+}
+
+.buttons .block {
+    margin-right: 5px;
+}
+.thumbnail{
+  margin-right: 20px;
+} 
+/* Container spacing */
+.container-fluid.p-5 {
+  background-color: #f9f9f9;
+}
+
+/* Table style */
+.table {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table header */
+.table thead th {
+  background-color: #343a40;
+  color: white;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Table body */
+.table tbody td {
+  vertical-align: middle;
+}
+
+/* Product image */
+.media-object {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Description label */
+.label-danger {
+  
+  color: black;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+/* Quantity buttons */
+.d-flex button {
+  background-color: #0d6efd;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.d-flex div {
+  padding: 0 10px;
+}
+
+/* Totals rows */
+.table tbody tr td h5,
+.table tbody tr td h3 {
+  margin: 0;
+}
+
+/* Continue / Checkout buttons */
+.btn-secondary,
+.btn-success {
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* Empty cart row */
+.table tbody tr td[colspan="6"] {
+  padding: 40px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #dc3545;
+}
+
+/* Responsive padding */
+@media (max-width: 768px) {
+  .d-flex {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .media-body h4, .media-body h5 {
+    font-size: 14px;
+  }
+
+  .table thead {
+    display: none;
+  }
+
+  .table, .table tbody, .table tr, .table td {
+    display: block;
+    width: 100%;
+  }
+
+  .table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 15px;
+    width: 45%;
+    white-space: nowrap;
+    font-weight: bold;
+    text-align: left;
+  }
+}
