@@ -4,17 +4,13 @@ import Footer from './common/Footer'
 import { Outlet } from 'react-router-dom'
 import Context from '../ContextApi/Context'
 
-export default function RootlayOut() {
+export default function RootLayout() {
   return (
     <>
     <Context>
       <Header/>
-
-
       <Outlet/>
-
-      <Footer/>
-
+       <Footer/>
       </Context>
     </>
   )

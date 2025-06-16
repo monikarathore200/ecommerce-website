@@ -9,7 +9,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Product from "./components/Product.jsx";
 import Home from "./components/Home.jsx";
 import AboutUs from "./components/AboutUs.jsx";
-import RootlayOut from "./components/RootlayOut.jsx";
+import RootLayout from "./components/RootLayout.jsx";
 import ProductDetail from "./components/common/ProductDetail.jsx";
 import Context from "./ContextApi/Context.jsx";
 import ViewCart from "./components/ViewCart.jsx";
@@ -21,7 +21,7 @@ createRoot(document.getElementById("root")).render(
     <Routes>
 
       
-      <Route element={<RootlayOut />}>
+      <Route element={<RootLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/product/:slug?/:sub_slug?" element={<Product />} />
